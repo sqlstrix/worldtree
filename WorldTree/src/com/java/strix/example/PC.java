@@ -43,12 +43,29 @@ public class PC {
 					"Да у компа нет системного блока, не трать зря время.");
 		} else if (this.keyboard == null && this.mouse == null) {
 			throw new java.lang.IllegalStateException(
-					"Да у компа клавиатура не подключена, как ты числа вводить собираешь?");
+					"Да у компа клавиатура и мышка не подключены, как ты числа вводить собираешь?");
 		} else if (this.monitor == null) {
 			throw new java.lang.IllegalStateException(
 					"Да у компа монитора нет, как ты увидишь результат?");
 		}
 		return a + b;
+	}
+	
+	public String getPCInfo() {
+	    StringBuilder sb = new StringBuilder("\r\nPC Info: ");
+	    if (this.systemUnit != null) {
+	        sb.append("\r\n").append("System Unit - ").append(this.systemUnit.getName());
+	    }
+        if (this.monitor != null) {
+            sb.append("\r\n").append("Monitor - ").append(this.monitor.getName());
+        }
+        if (this.keyboard != null) {
+            sb.append("\r\n").append("Keyboard - ").append(this.keyboard.getName());
+        }
+        if (this.mouse != null) {
+            sb.append("\r\n").append("Mouse - ").append(this.mouse.getName());
+        }
+        return sb.toString();
 	}
 
 }
