@@ -8,34 +8,48 @@ import com.java.strix.example.SystemUnit;
 
 public class Main {
 
-    public static void main(String[] args) { // новый комментарий
+	/**
+	 * Ctrl + Shift + L
+	 * @param args
+	 */
+	
+	public static void main(String[] args) { // новый комментарий
 
-        Tree tree = new Tree();
-        /*
-         * ещё комментарий тут
-         */
-        while (tree.getBranchesCount() < 10) {
-            tree.grow();
-        }
+		Tree tree = new Tree();
+		/*
+		 * ещё комментарий тут
+		 */
+		while (tree.getBranchesCount() < 10) {
+			tree.grow();
+		}
 
-        //System.out.println(tree.getTreeInfo());
+		int a = (int) Math.PI, b = 3;
+		boolean t = false;
+		boolean f = false;
+		if (t == f) {
+			System.out.println("@@@@@");
+		}
+		
+		if (a > b) {
+			System.out.println(a + ">" + b);
+		} else if (a == b) {
+			System.out.println(a + "=" + b);
+		} else {
+			System.out.println(a + "<" + b);
+		}
 
-        
-        
-        PC pc = new PC(new SystemUnit("Intel"), new Monitor("Samsung"), new Keyboard("IBM"), new Mouse("Apple"));
-        System.out.println(pc.getPCInfo());
-        System.out.println(pc.sum(15, 10));
-        pc = new PC(new SystemUnit("Intel"), null, new Keyboard("IBM"), null);
-        System.out.println(pc.getPCInfo());
-        System.out.println(pc.sum(15, 10));
-        
-        
-        
-        
-        
-        
-        
-        
-    }
+		// System.out.println(tree.getTreeInfo());
+		String aString = "на уровне ГрунтА";
+		System.out.println(Formatter.makePrettyLookingString("эТо".concat(" ").concat(aString)));
+		System.out.println(Formatter.makePrettyLookingString("Это отформатированная строка!", "-%s - %d!"));
+
+		PC pc = new PC(new SystemUnit("Intel"), new Monitor("Samsung"), new Keyboard("IBM"), new Mouse("Apple"));
+		System.out.println(pc.getPCInfo());
+		System.out.println(pc.sum(15, 10));
+		pc = new PC(new SystemUnit("Intel"), new Monitor("NEC"), new Keyboard("IBM"), null);
+		System.out.println(pc.getPCInfo());
+		System.out.println(pc.sum(15, 10));
+
+	}
 
 }
