@@ -1,0 +1,17 @@
+package com.java.strix.starconflict;
+
+public class EmpireEngineer implements Engineer {
+
+	@Override
+	public Integer heal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer recoverShield() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

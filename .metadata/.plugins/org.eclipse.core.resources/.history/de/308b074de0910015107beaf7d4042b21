@@ -1,0 +1,5 @@
+package com.java.strix.starconflict;
+
+public abstract class EmpireEngineer implements Engineer {
+
+}

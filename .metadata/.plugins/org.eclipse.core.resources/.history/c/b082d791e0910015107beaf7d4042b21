@@ -1,0 +1,22 @@
+package com.java.strix.starconflict;
+
+import java.util.Random;
+
+public class EmpireEngineer implements Engineer {
+
+	private static final Random rand = Random.
+	
+	
+	@Override
+	public Integer heal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer recoverShield() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

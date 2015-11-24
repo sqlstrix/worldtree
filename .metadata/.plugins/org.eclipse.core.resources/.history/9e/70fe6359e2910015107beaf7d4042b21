@@ -1,0 +1,12 @@
+package com.java.strix.starconflict;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		EmpireEngineer ee = new EmpireEngineer(1000, 35, "Sky", 500, null);
+
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package com.java.strix;
+
+import com.java.strix.example.Keyboard;
+import com.java.strix.example.Monitor;
+import com.java.strix.example.Mouse;
+import com.java.strix.example.PC;
+import com.java.strix.example.SystemUnit;
+
+public class Main {
+
+    public static void main(String[] args) { // новый комментарий
+
+        Tree tree = new Tree();
+        /*
+         * ещё комментарий тут
+         */
+        while (tree.getBranchesCount() < 10) {
+            tree.grow();
+        }
+
+        //System.out.print(tree.getTreeInfo());
+String aString = "SDFSDF";
+        System.out.print(Formatter.makePrettyLookingString("AAA".concat("  ").concat(aString)));
+        System.out.print(Formatter.makePrettyLookingString("Это отформатированная строка!!!", "~~~~~~~~~~~%s - %d!!!!!!"));
+        
+        
+        PC pc = new PC(new SystemUnit("Intel"), new Monitor("Samsung"), new Keyboard("IBM"), new Mouse("Apple"));
+        System.out.print(pc.getPCInfo());
+        System.out.print(pc.sum(15, 10));
+        pc = new PC(new SystemUnit("Intel"), null, new Keyboard("IBM"), null);
+        System.out.print(pc.getPCInfo());
+        System.out.print(pc.sum(15, 10));
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+
+}

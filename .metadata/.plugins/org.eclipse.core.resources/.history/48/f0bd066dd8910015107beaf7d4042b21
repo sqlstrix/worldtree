@@ -1,0 +1,14 @@
+package com.java.strix;
+
+public class Formatter {
+
+	public static int G = 10;
+	
+	public static String makePrettyLookingString(String input) {
+		
+		String output = input.toLowerCase();
+		return output;
+		
+	}
+	
+}

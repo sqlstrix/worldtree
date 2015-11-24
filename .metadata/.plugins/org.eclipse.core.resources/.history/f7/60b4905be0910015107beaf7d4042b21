@@ -1,0 +1,9 @@
+package com.java.strix.starconflict;
+
+public abstract class EmpireEngineer implements Engineer {
+
+	public void log(){
+		System.out.println("sdfsdf");
+	}
+	
+}
