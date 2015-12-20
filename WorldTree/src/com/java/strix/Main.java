@@ -1,11 +1,11 @@
 package com.java.strix;
 
 import com.java.strix.Reader;  //добавлен ипморт класса Reader
-import com.java.strix.example.Keyboard;
-import com.java.strix.example.Monitor;
-import com.java.strix.example.Mouse;
-import com.java.strix.example.PC;
-import com.java.strix.example.SystemUnit;
+//import com.java.strix.example.Keyboard;
+//import com.java.strix.example.Monitor;
+//import com.java.strix.example.Mouse;
+//import com.java.strix.example.PC;
+//import com.java.strix.example.SystemUnit;
 
 public class Main {
 

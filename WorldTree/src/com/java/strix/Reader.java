@@ -9,7 +9,7 @@ public class Reader {
 
 	public void Scan() {
 		System.out.println("¬веди число");
-		Scanner scn = new Scanner(System.in);
+		Scanner scn = new Scanner(System.in);  //из-за чего тут "!"?
 		t = scn.nextInt();
 		System.out.println("¬веди еще число");
 		s = scn.nextInt();
