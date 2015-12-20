@@ -1,9 +1,8 @@
 package com.java.strix;
-//импортируем захват ввода с клавы
-import java.util.Scanner;
+
+import java.util.Scanner;  //импортируем захват ввода с клавы
 
 public class Reader {
-	// целочисленные переменные t
 	int t;
 	int s;
 
