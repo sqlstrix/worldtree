@@ -1,16 +1,24 @@
 package com.java.strix;
 
-import java.util.Scanner;  //импортируем захват ввода с клавы
+import java.util.Scanner; //импортируем захват ввода с клавы
 
 public class Reader {
-	int t;
-	int s;
+	private int t, s;
 
-	public void Scan() {
-		System.out.println("¬веди число");
-		Scanner scn = new Scanner(System.in);  //из-за чего тут "!"?
+	public int getT() {
+		return t;
+	}
+
+	public int getS() {
+		return s;
+	}
+
+	public void scan() {
+		System.out.println("¬ведите первое число");
+		Scanner scn = new Scanner(System.in); // из-за чего тут "!"?
 		t = scn.nextInt();
-		System.out.println("¬веди еще число");
+		System.out.println("¬ведите второе число");
 		s = scn.nextInt();
+		scn.close(); // вот этого не хватало
 	}
 }
