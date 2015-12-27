@@ -3,7 +3,7 @@ package com.java.cars;
 public class Main {
 	public static void main(String args[]) {
 		Car c = new Car();
-		boolean result = c.drive(0.5);	
+		boolean result = c.drive(5.0, false);
 		if (result) {
 			System.out.println("Останется у тебя вот столько горючего: " + c.getFuelLevel());
 			System.out.println("И увеличится пробег: " + c.getMileage());
@@ -15,6 +15,6 @@ public class Main {
 		if (result1) {
 			System.out.println("Не залить ли в бак бензин: " + (c.getFuelTank() - c.getFuelLevel()));
 		}
-		
+
 	}
 }
