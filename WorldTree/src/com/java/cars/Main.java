@@ -1,20 +1,29 @@
 package com.java.cars;
 
 public class Main {
-	public static void main(String args[]) {
-		Car c = new Car();
-		boolean result = c.drive(5.0, false);
-		if (result) {
-			System.out.println("Останется у тебя вот столько горючего: " + c.getFuelLevel());
-			System.out.println("И увеличится пробег: " + c.getMileage());
-		} else {
-			System.out.println("не доедешь");
-		}
+    public static void main(String args[]) {
 
-		boolean result1 = c.fueling(0.5);
-		if (result1) {
-			System.out.println("Не залить ли в бак бензин: " + (c.getFuelTank() - c.getFuelLevel()));
-		}
+        Car c = new Car();
+        System.out.println("Создана новая машина: " + c.toString());
+        c.fueling(40D);
 
-	}
+        double distance = 5D;
+        if (c.drive(distance)) {
+            System.out.println("Мы проехали " + distance + " миль");
+            System.out.println("Осталось горючего: " + c.getFuelLevel() + " литров");
+            System.out.println("Текущий пробег: " + c.getMileage() + " миль");
+        } else {
+            System.out.println("Не могу ехать (проверь колёса и бак)");
+        }
+
+        double fuel = 0.5D;
+        if (c.fueling(fuel)) {
+            System.out.println("В бак залито " + fuel + " литров бензина");
+        } else {
+            System.out.println("Не удалось залить в бак " + fuel + " литров бензина");
+        }
+
+        System.out.println("Машина в конце дня: " + c.toString());
+
+    }
 }
